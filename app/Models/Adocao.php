@@ -12,4 +12,9 @@ class Adocao extends Model
     protected $table = "adocoes";
 
     protected $fillable = ["e-mail", "valor", "pet_id"];   
+
+    public function pet(){
+        
+        return $this->belongsTo(Pet::class);
+    }
 }

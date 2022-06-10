@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pet extends Model
 {   
-    protected $fillabel = ["name", "history", "photo"];
-
     use HasFactory;
+
+    protected $fillable = ["name", "history", "photo"];
 }
